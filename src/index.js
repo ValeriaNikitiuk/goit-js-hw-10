@@ -27,7 +27,7 @@ fetchCountries(searchOfCountry)
                 return;
             }
 
-            if (countrys.length <= 10 || countrys.lenght > 1) {
+            if (countrys.length <= 10 ) {
                 const markup = countrys.map(country => countryCardItems(country));
                 listCountry.innerHTML = markup.join('');
                 infoCountry.innerHTML = '';
